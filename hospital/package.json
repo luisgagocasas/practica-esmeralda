@@ -1,0 +1,21 @@
+{
+  "name": "LuisGagoCasas",
+  "version": "0.0.1",
+  "description": "Descripción del Proyecto",
+  "main": "Gruntfile.js",
+  "author": "Luis Gago Casas",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-browser-sync": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-ftp-push": "*",
+    "grunt-jade-php": "*",
+    "grunt-notify": "*",
+    "grunt-php": "*",
+    "load-grunt-tasks": "*"
+  }
+}

@@ -1,0 +1,74 @@
+animated(duration = 1s)
+	animation-duration duration
+	animation-fill-mode both
+animatedpulse()
+	animation-name pulse
+animatedflip()
+	animation-name flip
+animatedbounceIn()
+	animation-name bounceIn
+animatedbounceOutUp()
+	animation-name bounceOutUp
+@keyframes slidy
+	0%
+		left: 0%
+	20%
+		left: 0%
+	25%
+		left: -100%
+	45%
+		left: -100%
+	50%
+		left: -200%
+	70%
+		left: -200%
+	75%
+		left: -300%
+	95%
+		left: -300%
+	100%
+		left: -400%
+@keyframes pulse
+	0%
+		transform scale(1)
+	50%
+		transform scale(1.1)
+	100%
+		transform scale(1)
+@keyframes flip
+	0%
+		animation-timing-function ease-out
+		transform perspective(400px) translateZ(0) rotateY(0) scale(1)
+	40%
+		animation-timing-function ease-out
+		transform perspective(400px) translateZ(150px) rotateY(170deg) scale(1)
+	50%
+		animation-timing-function ease-in
+		transform perspective(400px) translateZ(150px) rotateY(190deg) scale(1)
+	80%
+		animation-timing-function ease-in
+		transform perspective(400px) translateZ(0) rotateY(360deg) scale(.95)
+	100%
+		animation-timing-function ease-in
+		transform perspective(400px) translateZ(0) rotateY(360deg) scale(1)
+@keyframes bounceIn
+	0%
+		opacity 0
+		transform scale(.3)
+	50%
+		opacity 1
+		transform scale(1.05)
+	70%
+		transform scale(.9)
+	100%
+		transform scale(1)
+
+@keyframes bounceOutUp
+	0%
+		transform translateY(0)
+	20%
+		opacity 1
+		transform translateY(20px)
+	100%
+		opacity 0
+		transform translateY(-2000px)

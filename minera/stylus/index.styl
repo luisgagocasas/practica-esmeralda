@@ -1,0 +1,148 @@
+@css { /*  CSS3 Clases - Luis Gago Casas */ }
+@import 'nib/vendor'
+//@import 'simplegrid'
+vendor-prefixes = o ms moz webkit
+@font-face
+	font-family: 'Quicksand'
+	font-style: normal
+	font-weight: 400
+	src: local('Quicksand Regular'), local('Quicksand-Regular'), url(//fonts.gstatic.com/s/quicksand/v5/sKd0EMYPAh5PYCRKSryvW1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2')
+@font-face
+	font-family: 'Montserrat'
+	font-style: normal
+	font-weight: 400
+	src: local('Montserrat-Regular'), url(//fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2')
+@font-face
+	font-family: 'Crimson Text'
+	font-style: normal
+	font-weight: 400
+	src: local('Crimson Text'), local('CrimsonText-Roman'), url(//fonts.gstatic.com/s/crimsontext/v6/3IFMwfRa07i-auYR-B-zNegdm0LZdjqr5-oayXSOefg.woff2) format('woff2')
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	ms-border-radius arguments
+	o-border-radius arguments
+	border-radius arguments
+appearance()
+	-webkit-appearance arguments
+	-moz-appearance arguments
+	ms-appearance arguments
+	o-appearance arguments
+	appearance arguments
+box-shadow()
+	-webkit-box-shadow arguments
+	-moz-box-shadow arguments
+	ms-box-shadow arguments
+	o-box-shadow arguments
+	box-shadow arguments
+transform()
+	-webkit-transform arguments
+	-moz-transform arguments
+	ms-transform arguments
+	o-transform arguments
+	transform arguments
+transition()
+	-webkit-transition arguments
+	-moz-transition arguments
+	ms-transition arguments
+	o-transition arguments
+	transition arguments
+flex()
+	-webkit-box-flex arguments
+	-moz-box-flex arguments
+	-webkit-flex arguments
+	-ms-flex arguments
+	o-flex arguments
+	flex arguments
+flexbox()
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+box-shadow()
+	-webkit-box-shadow arguments
+	-moz-box-shadow arguments
+	ms-box-shadow arguments
+	o-box-shadow arguments
+	box-shadow arguments
+zoom()
+	-ms-zoom arguments
+	-webkit-zoom arguments
+	zoom arguments
+background-size()
+	-webkit-background-size arguments
+	-moz-background-size arguments
+	ms-background-size arguments
+	o-background-size arguments
+	background-size arguments
+user-select()
+	-webkit-user-select arguments
+	-moz-user-select arguments
+	-ms-user-select arguments
+	user-select arguments
+body
+	background white
+	color #555
+	font-family: 'Quicksand', sans-serif
+	font-size 16px
+*, *:after, *:before
+    -moz-box-sizing border-box
+    -webkit-box-sizing border-box
+    box-sizing border-box
+	margin 0
+a
+	color #000
+	text-decoration none
+ul
+	margin 0px
+	padding 0px 0px 0px 15px
+li
+	list-style none
+h1
+	padding: 10px 0px 0px 0px
+//Estructura
+.wrapper
+	background: red
+	width: 1000px
+	margin: auto
+.contenedor_cabecera
+	flexbox()
+	padding-top: 15px
+	padding-bottom: 15px
+.logo, .buscador
+	flex 1
+	flexbox()
+	justify-content: center
+	align-items: center
+.logo
+	background: blue
+	order 2
+.buscador
+	background: green
+	order 1
+.menu_cabecera
+	.menu
+		background: chartreuse
+		padding: 10px
+		li
+			display inline-block
+			a
+				padding: 10px
+				background: gray
+.cuerpo
+	flexbox()
+	.articulo
+		flex 2
+		background pink
+	.columna
+		flex 1
+		background: orange
+	 	img
+			width: 300px
+			height: 300px
+			border-radius 100%
+.pie_pagina
+	flexbox()
+	.columna_footer
+		flex 1
